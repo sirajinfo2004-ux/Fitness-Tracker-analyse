@@ -9,6 +9,10 @@ The project uses real-time-like fitness data to provide insights into workouts, 
 - Identify the most frequent workout type.  
 - Visualize data with bar charts, line plots, and pie charts.  
 - Helps users understand workout patterns and performance trends.  
+## 🎯 Skills Gained
+- Data cleaning with Pandas
+- Data visualization with Matplotlib & Seaborn
+- Building real-world Python projects
 
 ---
 
@@ -34,3 +38,7 @@ The project uses real-time-like fitness data to provide insights into workouts, 
 1. Clone this repository:
    ```bash
    git clone https://github.com/YourUsername/FitnessTracker.git
+## 🎯 Skills Gained
+- Data cleaning with Pandas
+- Data visualization with Matplotlib & Seaborn
+- Building real-world Python projects
