@@ -1,0 +1,10 @@
+
+import pandas as pd
+
+# Step 1: Load the CSV file
+file_path = "fitness_data.csv"
+df = pd.read_csv("C:\\Fitness_tracker-project\\fitness_data.csv")
+
+# Step 2: Display first few rows
+print("===== FITNESS DATA =====")
+print(df.head())

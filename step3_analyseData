@@ -1,0 +1,14 @@
+import pandas as pd
+
+file_path = r"C:\Fitness_tracker-project\fitness_data.csv"
+df = pd.read_csv(file_path)
+
+# Strip spaces from column names
+df.columns = df.columns.str.strip()
+
+print("Columns in CSV:", df.columns)
+print(df.head())
+
+# Now safe to do analysis
+total_calories = df["Calories_Burned"].sum()
+print("Total Calories Burned:", total_calories)

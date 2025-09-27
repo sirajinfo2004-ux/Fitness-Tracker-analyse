@@ -1,0 +1,23 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load CSV
+file_path = r"C:\Fitness_tracker-project\fitness_data.csv"
+df = pd.read_csv(file_path)
+df.columns = df.columns.str.strip()  # remove spaces
+
+# Analysis
+calories_by_workout = df.groupby("Workout_Type")["Calories_Burned"].sum()
+
+# Visualization
+sns.set(style="whitegrid")
+
+plt.figure(figsize=(8,5))
+sns.barplot(x=calories_by_workout.index, y=calories_by_workout.values, palette="viridis")
+plt.title("Calories Burned by Workout Type")
+plt.ylabel("Calories Burned")
+plt.xlabel("Workout Type")
+plt.xticks(rotation=30)
+plt.tight_layout()
+plt.show()

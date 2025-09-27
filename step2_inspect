@@ -1,0 +1,6 @@
+# Step 3.1: Inspect the Data
+print("\n===== DATA INSPECTION =====")
+print("Shape of dataset:", df.shape)        # Rows x Columns
+print("Columns in dataset:", df.columns)   # List of columns
+print("Check for missing values:\n", df.isnull().sum())  # Count missing data
+print("\nData types:\n", df.dtypes)        # Check data types
